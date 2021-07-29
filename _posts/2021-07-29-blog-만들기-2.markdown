@@ -45,11 +45,9 @@ gem install jekyll bundler
 
 를 실행해줍니다.  
 
-```
-```
+
 ## 2. 그 뒤 index.html 를 제거해줍니다.
-```
-```
+
 
 ## 3. Jekyll 생성  
 
