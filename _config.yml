@@ -1,4 +1,4 @@
-title: Data wakuwaku
+title: Your awesome title
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -27,7 +27,7 @@ plainwhite:
   # generate social links in footer
   social_links:
     twitter: samarsault
-    github:  Junhyuk93
+    github:  junhyuk93
     linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
