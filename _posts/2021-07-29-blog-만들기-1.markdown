@@ -13,7 +13,7 @@ categories: Linux
 
 ## 1. 새로운 Repository 만들기
 
-![1](_posts/_images/1.png)
+![1]./_images/1.png)
 
 그림과 같이 본인의 github 에서 Repositories 에 들어가 New 버튼을 눌러 Repositories 를 생성해줍니다.
 
@@ -28,7 +28,7 @@ categories: Linux
 
 ## 3. repositories clone 하기
 
-![3](./_posts/_images/3.png)
+![3](./_images/3.png)
 
 생성했던 repositories 에 들어가서 그림에 있는 초록색 Code 버튼을 누르면 아래에 https 주소가 나옵니다.
 
@@ -65,7 +65,7 @@ git push -u origin main
 
 성공적으로 push 하셨다면 본인의 repositories 에 README.md 와 index.html 가 존재하게 됩니다.
 
-![4](./_posts/_images/4.png)
+![4](./_images/4.png)
 
 이렇게 성공하게된다면 닉네임.github.io 를 입력해주면 블로그를 확인할 수 있습니다.
 
