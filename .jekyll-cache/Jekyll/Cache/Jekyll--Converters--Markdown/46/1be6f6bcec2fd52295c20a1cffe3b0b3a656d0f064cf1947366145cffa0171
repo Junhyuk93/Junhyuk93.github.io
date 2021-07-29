@@ -1,0 +1,38 @@
+I"	<p>Jekyll uses Rouge by default for syntax highlighting, here are some tests.</p>
+
+<p>Ruby:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Python with line numbers:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Hi, {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+<span class="n">print_hi</span><span class="p">(</span><span class="s">'Tom'</span><span class="p">)</span>
+<span class="c1"># prints 'Hi, Tom' to STDOUT.</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>C with line numbers:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">print_hi</span><span class="p">(</span><span class="n">string</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Hi, %s"</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s">"Tom"</span><span class="p">);</span>
+<span class="cm">/* prints 'Hi, Tom' to STDOUT. */</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+:ET

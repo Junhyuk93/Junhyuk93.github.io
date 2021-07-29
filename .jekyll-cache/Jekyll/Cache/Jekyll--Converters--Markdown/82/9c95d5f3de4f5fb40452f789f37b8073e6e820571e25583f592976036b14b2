@@ -1,0 +1,89 @@
+I"<div class="col s12 cat-div">
+  <div class="cat-list">
+    
+    
+    
+    <a class="cat-chip" href="#default_cap"><div class="chip z-depth-1">Default</div></a>
+    
+    
+    
+    <a class="cat-chip" href="#default"><div class="chip z-depth-1">default</div></a>
+    
+    
+    
+    <a class="cat-chip" href="#jekyll"><div class="chip z-depth-1">jekyll</div></a>
+    
+    
+    
+    <a class="cat-chip" href="#update"><div class="chip z-depth-1">update</div></a>
+    
+  </div>
+  <div class="divider"></div>
+  <div class="cat-index">
+    
+    
+    
+    <h4 id="default_cap">Default</h4>
+    <ul class="cat-post">
+      
+      <a class="post-title" href="/default/2017/03/23/welcome-to-jekyll.html" target="_blank">
+        <li>
+          Welcome to Jekyll!
+          <small class="post-date">23 Mar 2017</small>
+        </li>
+      </a>
+      
+    </ul>
+    
+    
+    
+    <h4 id="default">default</h4>
+    <ul class="cat-post">
+      
+      <a class="post-title" href="/default/2017/03/25/another-post.html" target="_blank">
+        <li>
+          This is Just Another Post
+          <small class="post-date">25 Mar 2017</small>
+        </li>
+      </a>
+      
+      <a class="post-title" href="/default/2017/03/24/syntax-test.html" target="_blank">
+        <li>
+          Syntax Highlighting Test
+          <small class="post-date">24 Mar 2017</small>
+        </li>
+      </a>
+      
+    </ul>
+    
+    
+    
+    <h4 id="jekyll">jekyll</h4>
+    <ul class="cat-post">
+      
+      <a class="post-title" href="/jekyll/update/2021/07/29/welcome-to-jekyll.html" target="_blank">
+        <li>
+          Welcome to Jekyll!
+          <small class="post-date">29 Jul 2021</small>
+        </li>
+      </a>
+      
+    </ul>
+    
+    
+    
+    <h4 id="update">update</h4>
+    <ul class="cat-post">
+      
+      <a class="post-title" href="/jekyll/update/2021/07/29/welcome-to-jekyll.html" target="_blank">
+        <li>
+          Welcome to Jekyll!
+          <small class="post-date">29 Jul 2021</small>
+        </li>
+      </a>
+      
+    </ul>
+    
+  </div>
+</div>
+:ET
