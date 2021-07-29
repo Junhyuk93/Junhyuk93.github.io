@@ -8,16 +8,19 @@ categories: Linux
 
 # github 블로그 만들기 
 
+
+
+
 ## 1. 새로운 Repository 만들기
 
-![1](./_posts/_images/1.png)
+![1](_posts/_images/1.png)
 
 그림과 같이 본인의 github 에서 Repositories 에 들어가 New 버튼을 눌러 Repositories 를 생성해줍니다.
 
 
 ## 2. Repository 이름 설정
 
-![2](./_posts/_images/2.png)
+![2](./_images/2.png)
 
 양식은 username.github.io 입니다. 공식문서에 따라서 자신의 github 닉네임과 username 부분의 이름이 일치하지 않을 경우, 작동하지 않을 수 있다고 합니다.
 
