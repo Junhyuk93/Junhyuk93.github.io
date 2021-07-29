@@ -2,9 +2,9 @@ name:               "Park junhyuk"
 description:        "수정중"
 
 url:                "junhyuk93.github.io"
-author:             "Park junhyuk"
+author:             "Data wakuwaku"
 email:              "akznsk1@gmail.com"
-gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+gravatar_hash:      "https://img1.daumcdn.net/thumb/C120x120/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcafeattach%2FmEr9%2F920f1be01d06c16ed0fedbeb527dda4f2bc25bfb"
 twitter:            ""
 email:              "akznsk1@gmail.com"
 github:             "junhyuk93"
@@ -14,7 +14,7 @@ facebook:           ""
 
 disqus_shortname:   "waku"
 
-background:         "https://avatars.githubusercontent.com/u/61610411?s=400&u=e0c34baac2dbd6cb74f26a4291f234332f950885&v=4"
+background:         "https://t1.daumcdn.net/cafeattach/mEr9/f1d4d63d8e7c1f5ec641cef83d0926cc257f965c"
 
 paginate:           5
 paginate_path:      "/page:num/"
