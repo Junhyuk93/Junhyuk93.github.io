@@ -1,5 +1,5 @@
 name:               "Park junhyuk"
-description:        "A minimalistic jekyll theme for humans"
+description:        "수정중"
 
 url:                "junhyuk93.github.io"
 author:             "Park junhyuk"
@@ -7,14 +7,14 @@ email:              "akznsk1@gmail.com"
 gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
 twitter:            ""
 email:              "akznsk1@gmail.com"
-github:             "https://github.com/Junhyuk93"
+github:             "junhyuk93"
 pinterest:          ""
 linkedin:           ""
 facebook:           ""
 
 disqus_shortname:   "waku"
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+background:         "https://avatars.githubusercontent.com/u/61610411?s=400&u=e0c34baac2dbd6cb74f26a4291f234332f950885&v=4"
 
 paginate:           5
 paginate_path:      "/page:num/"
