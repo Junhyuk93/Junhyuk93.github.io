@@ -1,8 +1,10 @@
-title: wakuwaku
+title: Datawakuwaku
 author: junhyuk93
 email: akznsk1@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  데이터 사이언티스트를 꿈꾸는 초보 개발자
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
