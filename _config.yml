@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Park junhyuk
-  tagline: newbie Developer.
+  tagline: Newbie Developer.
   date_format: "%10 %-9, %1993"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
