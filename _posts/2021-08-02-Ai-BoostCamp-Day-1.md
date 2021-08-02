@@ -73,6 +73,7 @@ for epoch in range(100):
 -   non-conex한 그래프에선 경사하강법을 쓸 수 없다. 이를 보완하기 위해 **확률적 경사하강법**을 사용한다.
 
 
+---
 ### 2. 확률적 경사하강법(Stochastic Gradient Descent)
 
 
@@ -85,14 +86,18 @@ for epoch in range(100):
 ![16](https://user-images.githubusercontent.com/61610411/127858518-9ed67cc6-23d1-4ba6-9846-3b3010216168.png)
 
 
+---
+### <span style="color:blue">|궁금했던 점|.</span>
 
-### 궁금했던 점
 
+
+
+<u>**Object Detection?    Localization?    Semantic Segmentation?    Instance Segmentation?**</u> 
 
 ![17](https://user-images.githubusercontent.com/61610411/127860040-02562c8d-3945-43f8-9500-86b07fba264c.PNG)
 
 
-|**Object Detection?    Localization?    Semantic Segmentation?    Instance Segmentation?**| 
+---
 
 
 ![18](https://user-images.githubusercontent.com/61610411/127862694-c0b5fef8-1e9d-4c0e-b2e2-da90060bdfe1.png)
