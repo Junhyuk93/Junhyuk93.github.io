@@ -87,7 +87,7 @@ for epoch in range(100):
 
 
 ---
-### |<span style="color:blue">궁금했던 점.</span>|
+### <span style="color:blue">궁금했던 점</span>
 
 
 
