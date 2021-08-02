@@ -5,9 +5,9 @@ date:   2021-08-02 22:34:36 +0530
 categories: Python, Math, CV, NLP
 ---
 
+-
 
-
-# 공부한 내용
+## 공부한 내용
 
 - 경사하강법(Gradient Descent) 이란?
     학습률과 손실함수의 순간기울기(gradient)를 이용하여 가중치(weight)를 업데이트 하는 방법
@@ -16,7 +16,7 @@ categories: Python, Math, CV, NLP
 
 
 ### 파이썬으로 경사하강법 코드 구현하기
-\n
+
 
 ```python
 import numpy as np
@@ -62,6 +62,4 @@ for epoch in range(100):
 ![15](https://user-images.githubusercontent.com/61610411/127855455-c61c7f92-8dc3-49e1-862b-bd3771d7d130.png)
 
 
-실행시 실제값인 주황색 선이 그려지고 예측값인 파란색 선이 그려진다.
-
-과정이 진행될수록 예측값인 파란색 선이 주황색 선에 가까워짐을 알 수 있다.
+- 실행시 실제값인 주황색 선이 그려지고 예측값인 파란색 선이 그려진다.  과정이 진행될수록 예측값인 파란색 선이 주황색 선에 가까워짐을 알 수 있다.
