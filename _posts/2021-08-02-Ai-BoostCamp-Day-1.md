@@ -87,12 +87,12 @@ for epoch in range(100):
 
 
 ---
-### <span style="color:blue">|궁금했던 점|.</span>
+### |<span style="color:blue">궁금했던 점.</span>|
 
 
 
 
-<u>**Object Detection?    Localization?    Semantic Segmentation?    Instance Segmentation?**</u> 
+**<u>Object Detection?    Localization?    Semantic Segmentation?    Instance Segmentation?</u>** 
 
 ![17](https://user-images.githubusercontent.com/61610411/127860040-02562c8d-3945-43f8-9500-86b07fba264c.PNG)
 
@@ -115,7 +115,13 @@ for epoch in range(100):
 ##### url 관련 unbalanced data를 해결하기 위해 GAN(Generative adversarial network)를 적용해보려 했으나 실패했었다. CV에서는 최근 논문에도 GAN이 자주 언급되는거 보니 성능이 괜찮은가보다.
 
 
-<참고자료>
+<참고자료>  
+
+
 [1]https://iyousys.tistory.com/42
+
+
 [2]https://modulabs-biomedical.github.io/FCN
+
+
 [3]https://light-tree.tistory.com/75
