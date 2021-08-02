@@ -116,12 +116,6 @@ for epoch in range(100):
 
 
 <참고자료>  
-
-
-[1] https://iyousys.tistory.com/42  
-
-
-[2] https://modulabs-biomedical.github.io/FCN  
-
-
-[3] https://light-tree.tistory.com/75  
+- https://iyousys.tistory.com/42  
+- https://modulabs-biomedical.github.io/FCN  
+- https://light-tree.tistory.com/75  
