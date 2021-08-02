@@ -106,6 +106,9 @@ for epoch in range(100):
 - 물체를 바운딩 박스로 나타내는 Object Detection과 다르게, Semantic Segmentation은 이미지 내 모든 픽셀이 각각 어느 클래스에 속하는지 예측하고 그것들을 모아서 이미지를 의미 있는 단위로 분할한다. 
 
 
+---
+
+
 ![19](https://user-images.githubusercontent.com/61610411/127862733-918c43df-f166-4009-8086-fcd4b36bffc1.png)
 
 
