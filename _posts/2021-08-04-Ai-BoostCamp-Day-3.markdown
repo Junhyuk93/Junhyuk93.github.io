@@ -65,9 +65,13 @@ categories: TIL
 
 - 표본평균이나 표본분산은 중요한 통계량이지만 확률분포마다 사용하는 모수가 다르므로 필요로 하는 통계량이 달라지게 됨.
   이론적으로 가장 가능성이 높은 모수를 추정하는 방법 중 하나.
+
+
+```markdown
 \begin{align}
 \hat\theta_{\text{MLE}} = \arg \max_{\theta} L(\theta; x)
 \end{align}
+```
 
 
 
