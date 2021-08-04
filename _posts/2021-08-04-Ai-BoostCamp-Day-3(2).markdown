@@ -40,10 +40,7 @@ categories: TIL
 ![image](https://user-images.githubusercontent.com/61610411/128205382-1358c03d-c348-4818-8636-cca9bad37211.png)
 
 
-- 위 식의 결과 값이 가장 커지는 θ 를 추정값 θ^ 로 보는 것이 가장 근사함.
-
-
- 위 식을 likelihood function 이라고 하고 보통은 자연로그를 이용해 아래와 같이 log-likelihood function $L(θ|x)$ 를 이용함.
+- 위 식을 likelihood function 이라고 하고 보통은 자연로그를 이용해 아래와 같이 log-likelihood function L(θ|x) 를 이용함.
 
 
 ![image](https://user-images.githubusercontent.com/61610411/128205864-2aeab6dd-6748-404f-86ad-87b6c930867e.png)
