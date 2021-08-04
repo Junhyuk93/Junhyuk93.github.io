@@ -94,5 +94,8 @@ categories: TIL
 - 몬테카를로 샘플링은 독립추출만 보장된다면 **대수의법칙(law of large number)에 의해 수렴성을 보장**함.
 
 
+---
+
+
 
 ( 참고자료 https://sungwookkang.com/1415 ) 
