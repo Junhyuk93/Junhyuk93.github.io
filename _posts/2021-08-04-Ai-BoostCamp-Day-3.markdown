@@ -37,14 +37,39 @@ categories: TIL
     ![image](https://user-images.githubusercontent.com/61610411/128150065-e19e83fa-8528-49df-8b1e-9ed6b0fffbdb.png)
 
 
-    ![image](https://user-images.githubusercontent.com/61610411/128150257-c1f1b908-3f9d-4c85-8078-b52030b8d27b.png)
-
-
     - 데이터가 실수 전체에서 값을 가지는 경우 -> **정규분포, 라플라스분포 등**
 
 
     ![image](https://user-images.githubusercontent.com/61610411/128150794-7208d2b8-8d33-4a52-ab16-474b5737492f.png)
 
+- 기계적으로 확률분포를 가정해서는 안 되며, **데이터를 생성하는 원리를 먼저 고려하는것이 원칙**
+
+---
+
+
+### 중심극한정리(Central Limit Thorem)
+
+
+- 동일한 확률 분포를 가진 독립 확률 변수 n개의 평균의 분포는 n개가 커짐에 따라
+  모집단 분포의 모양에 관계없이 정규분포와 가까워지는 정리
+
+
+![image](https://user-images.githubusercontent.com/61610411/128196019-fee55020-d5f9-4d1c-8ba9-3b2814825328.png)
+
+
+![image](https://user-images.githubusercontent.com/61610411/128196246-eb1838c5-98e7-4c0f-a930-ecd7da686d90.png)
+
+
+### 최대 가능도 추정법(Maximum Likelihood Estimation, MLE)
+
+
+- 표본평균이나 표본분산은 중요한 통계량이지만 확률분포마다 사용하는 모수가 다르므로 필요로 하는 통계량이 달라지게 됨.
+  이론적으로 가장 가능성이 높은 모수를 추정하는 방법 중 하나.
+\begin{align}
+\hat\theta_{\text{MLE}} = \arg \max_{\theta} L(\theta; x)
+\end{align}
+
 
 
 <참고자료>
+https://drhongdatanote.tistory.com/57
