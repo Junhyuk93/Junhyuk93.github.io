@@ -19,6 +19,7 @@ categories: TIL
 
 ![image](https://user-images.githubusercontent.com/61610411/128199059-234049f2-b996-4697-ab25-0e45b41700cb.png)
 
+
 ### Likelihood function
 
 
