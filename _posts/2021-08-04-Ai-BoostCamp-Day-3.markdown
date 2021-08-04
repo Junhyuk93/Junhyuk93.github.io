@@ -67,44 +67,11 @@ categories: TIL
 - 표본평균이나 표본분산은 중요한 통계량이지만 확률분포마다 사용하는 모수가 다르므로 필요로 하는 통계량이 달라지게 됨.
   이론적으로 가장 가능성이 높은 모수를 추정하는 방법 중 하나.
 
-
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
-    <mlabeledtr>
-      <mtd id="mjx-eqn-9.2.12">
-        <mtext> </mtext>
-      </mtd>
-      <mtd>
-        <msub>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mover>
-              <mi>&#x03B8;<!-- θ --></mi>
-              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
-            </mover>
-          </mrow>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mtext>MLE</mtext>
-          </mrow>
-        </msub>
-        <mo>=</mo>
-        <mi>arg</mi>
-        <mo>&#x2061;<!-- ⁡ --></mo>
-        <munder>
-          <mo movablelimits="true" form="prefix">max</mo>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>&#x03B8;<!-- θ --></mi>
-          </mrow>
-        </munder>
-        <mi>L</mi>
-        <mo stretchy="false">(</mo>
-        <mi>&#x03B8;<!-- θ --></mi>
-        <mo>;</mo>
-        <mi>x</mi>
-        <mo stretchy="false">)</mo>
-      </mtd>
-    </mlabeledtr>
-  </mtable>
-</math>
+```html
+\begin{align}
+\hat\theta_{\text{MLE}} = \arg \max_{\theta} L(\theta; x)
+\end{align}
+```
 
 
 
