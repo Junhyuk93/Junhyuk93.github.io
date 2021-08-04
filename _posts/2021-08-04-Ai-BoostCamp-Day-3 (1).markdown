@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "부스트캠프 AI Tech 2기 Day - 3"
+title:  "부스트캠프 AI Tech 2기 Day - 3 (1)"
 date:   2021-08-04 20:34:36 +0530
 categories: TIL
 ---

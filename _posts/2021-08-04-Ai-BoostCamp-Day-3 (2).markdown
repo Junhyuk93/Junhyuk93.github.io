@@ -23,32 +23,31 @@ categories: TIL
 
 
 - likelihood 라는 것은 지금 얻은 데이터가 분포로부터 나왔을 가능도를 말함.
- 수치적으로 이 가능도를 계산히가 위해서는 **각 데이터 샘플에서 후보 분포에 대한 높이(즉, likelihood 기여도)를 계산해서 모두 곱한것**을 이용 할 수 있을 것임.
+  수치적으로 이 가능도를 계산히가 위해서는 **각 데이터 샘플에서**
+  **후보 분포에 대한 높이(즉, likelihood 기여도)를 계산해서 모두 곱한것**을 이용 할 수 있을 것임.
 
     
- 계산된 높이를 더해주지 않고 곱해주는 것은 모든 데이터들의 추출이 독립적으로 연달아 일어나는 사건이기 때문.
+- 계산된 높이를 더해주지 않고 곱해주는 것은 모든 데이터들의 추출이 독립적으로 연달아 일어나는 사건이기 때문.
 
 
- 그렇게 해서 계산된 가능도를 생각해볼 수 있는 모든 후보군에 대해 계산하고 이것을 비교하면 우리는 지금 얻은 데이터를 가장 잘 설명할 수있는 확률분포를 얻어낼 수 있게 됨.
+- 그렇게 해서 계산된 가능도를 생각해볼 수 있는 모든 후보군에 대해 계산하고
+  이것을 비교하면 우리는 지금 얻은 데이터를 가장 잘 설명할 수있는 확률분포를 얻어낼 수 있게 됨.
 
 
- 이 likelihood를 조금 더 수학적으로 서술하면
+이 likelihood를 조금 더 수학적으로 서술하면
 
 
 ![image](https://user-images.githubusercontent.com/61610411/128205382-1358c03d-c348-4818-8636-cca9bad37211.png)
 
 
-- 위 식의 결과 값이 가장 커지는 θ 를 추정값 θ^ 로 보는 것이 가장 근사함.
-
-
- 위 식을 likelihood function 이라고 하고 보통은 자연로그를 이용해 아래와 같이 log-likelihood function $L(θ|x)$ 를 이용함.
+- 위 식을 likelihood function 이라고 하고 보통은 자연로그를 이용해 아래와 같이 log-likelihood function L(θ|x) 를 이용함.
 
 
 ![image](https://user-images.githubusercontent.com/61610411/128205864-2aeab6dd-6748-404f-86ad-87b6c930867e.png)
 
 
 
-<참고자료>
-https://drhongdatanote.tistory.com/57
-https://datascienceschool.net/
-https://angeloyeo.github.io/2020/07/17/MLE.html
+##### 참고자료
+> https://drhongdatanote.tistory.com/57
+> https://datascienceschool.net/
+> https://angeloyeo.github.io/2020/07/17/MLE.html
