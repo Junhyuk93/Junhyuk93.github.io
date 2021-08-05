@@ -19,14 +19,19 @@ categories: TIL
 
 #### 다양한 차원에서의 Convolution
 
-
-> 1D-conv -> $$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,)g(i+p)}$$
-
-
-> 2D-conv -> $$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,q)g(i+p,j+q)}$$
+-
+    > 1D-conv
+    $$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,)g(i+p)}$$
 
 
-> 3D-conv -> $$[f * g](i,j,k) = \displaystyle\sum_{p,q,r}{f(p,q,r)g(i+p,j+q,k+r)}$$
+    > 2D-conv
+    $$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,q)g(i+p,j+q)}$$
+
+
+    > 3D-conv 
+    $$[f * g](i,j,k) = \displaystyle\sum_{p,q,r}{f(p,q,r)g(i+p,j+q,k+r)}$$
+-
+
 
 **i,j,k가 바뀌어도 커널 $$f$$의 값은 바뀌지 않음.**
 
