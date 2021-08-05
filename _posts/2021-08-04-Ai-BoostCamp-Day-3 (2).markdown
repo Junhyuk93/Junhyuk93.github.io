@@ -49,8 +49,32 @@ categories: TIL
 
 ![스크린샷2](https://user-images.githubusercontent.com/61610411/128279337-0ff9f2e1-8fe2-40a2-9b4d-ff56b9121298.png)
 
+---
+
+## 베이즈 통계학
 
 
+#### 베이즈정리
+
+
+- 두 확률 변수의 사전 확률과 사후 확률 사이의 관계를 나타내는 정리
+
+![image](https://user-images.githubusercontent.com/61610411/128280618-590578a0-53ca-4bb5-b731-22e96e09925e.png)
+
+
+- 베이즈 정리를 통해 새로운 데이터가 들어왔을때 앞서 계산한 사후확률을 사전확률로 사용하여 갱신된 사후확률을 계산할 수 있음.
+
+---
+
+#### 통계적 가설 검정
+
+
+![image](https://user-images.githubusercontent.com/61610411/128281011-f45beb48-c167-46e6-9b48-2db48f86771d.png)
+
+
+- 어떤 테스크에 있는지에 따라 1종 오류가 중요할 수도, 2종 오류가 중요할 수도 있음.
+
+- 내가 진행했던 피싱 URL 분류에서는 피싱 URL 일때, 검정의 결과가 정상 URL 이라고 판단하는 제 2종 오류가 중요했음.
 
 ##### 참고자료
 > https://drhongdatanote.tistory.com/57
