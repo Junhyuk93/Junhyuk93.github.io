@@ -69,12 +69,11 @@ categories: TIL
 #### 통계적 가설 검정
 
 
-![image](https://user-images.githubusercontent.com/61610411/128281011-f45beb48-c167-46e6-9b48-2db48f86771d.png)
+![image](https://user-images.githubusercontent.com/61610411/128284088-b1676af2-eac0-4c05-baf1-e654ef4d316b.png)
 
 
 - 어떤 테스크에 있는지에 따라 1종 오류가 중요할 수도, 2종 오류가 중요할 수도 있음.
 
-- 내가 진행했던 피싱 URL 분류에서는 피싱 URL 일때, 검정의 결과가 정상 URL 이라고 판단하는 제 2종 오류가 중요했음.
 
 ##### 참고자료
 > https://drhongdatanote.tistory.com/57
