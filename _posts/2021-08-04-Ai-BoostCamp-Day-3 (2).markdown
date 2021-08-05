@@ -34,22 +34,21 @@ categories: TIL
 - 그렇게 해서 계산된 가능도를 생각해볼 수 있는 모든 후보군에 대해 계산하고
   이것을 비교하면 우리는 지금 얻은 데이터를 가장 잘 설명할 수있는 확률분포를 얻어낼 수 있게 됨.
 
-
-이 likelihood를 조금 더 수학적으로 서술하면
+  
+  이 likelihood를 조금 더 수학적으로 서술하면
 
 
 ![image](https://user-images.githubusercontent.com/61610411/128205382-1358c03d-c348-4818-8636-cca9bad37211.png)
 
 
-- 위 식을 likelihood function 이라고 하고 보통은 자연로그를 이용해 아래와 같이 log-likelihood function L(θ|x) 를 이용함.
+- 위 식을 likelihood function 이라고 하고 보통은 자연로그를 이용해 아래와 같이 log-likelihood function L(θㅣx) 를 이용함.
 
 
 ![image](https://user-images.githubusercontent.com/61610411/128205864-2aeab6dd-6748-404f-86ad-87b6c930867e.png)
 
 
-![스크린샷2](https://user-images.githubusercontent.com/61610411/128278941-186909ce-59ab-4a08-983d-3f609e1c6afd.png)
+![스크린샷2](https://user-images.githubusercontent.com/61610411/128279337-0ff9f2e1-8fe2-40a2-9b4d-ff56b9121298.png)
 
-![스크린샷](https://user-images.githubusercontent.com/61610411/128278939-8a7d4523-a4aa-4495-8554-c2e853693356.png)
 
 
 
