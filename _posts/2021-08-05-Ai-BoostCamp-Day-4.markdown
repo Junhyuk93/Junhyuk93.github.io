@@ -3,6 +3,8 @@ layout: post
 title:  "부스트캠프 AI Tech 2기 Day - 4"
 date:   2021-08-04 23:15:36 +0530
 categories: TIL
+use_math: true
+comments: true
 ---
 
 -
@@ -19,18 +21,18 @@ categories: TIL
 
 #### 다양한 차원에서의 Convolution
 
--
-    > 1D-conv
+
+    1D-conv
     $$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,)g(i+p)}$$
 
 
-    > 2D-conv
+    2D-conv
     $$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,q)g(i+p,j+q)}$$
 
 
-    > 3D-conv 
+    3D-conv 
     $$[f * g](i,j,k) = \displaystyle\sum_{p,q,r}{f(p,q,r)g(i+p,j+q,k+r)}$$
--
+
 
 
 **i,j,k가 바뀌어도 커널 $$f$$의 값은 바뀌지 않음.**
