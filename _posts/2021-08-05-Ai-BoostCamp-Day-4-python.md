@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "부스트캠프 AI Tech 2기 Day - 4"
+title:  "부스트캠프 AI Tech 2기 Day - 4 - python"
 date:   2021-08-04 23:15:36 +0530
 categories: TIL
 ---
@@ -54,7 +54,8 @@ print(f(1,4))
 return 을 이용해서 랜덤한 수를 반환해주는 함수.
 
 임의의 수를 생성하고 이를 10회 반복하려 return 하도록 구성.
-![image](https://user-images.githubusercontent.com/61610411/128295765-b8eb0d38-aff8-461a-9b44-9a267b492935.png)
+![image](https://user-images.githubusercontent.com/61610411/128296545-d43f09e3-4580-418b-8ce5-2784eaca34fa.png)
+
 
 이렇게 작성할 시, return이 호출되면 반복을 멈추고, 수를 반환하기 때문에 hello 가 출력되지 않음.
 
