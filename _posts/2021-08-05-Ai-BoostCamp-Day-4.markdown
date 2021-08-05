@@ -23,22 +23,26 @@ categories: TIL
 > 1D-conv
 
 
-$$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,)g(i+p)}$$
+$$[f * g](i,j) = sum_{p,q,r}{f(p,)g(i+p)}$$
 
 
 > 2D-conv
 
 
-$$[f * g](i,j) = \displaystyle\sum_{p,q,r}{f(p,q)g(i+p,j+q)}$$
+$$[f * g](i,j) = sum_{p,q,r}{f(p,q)g(i+p,j+q)}$$
 
 
 > 3D-conv 
 
 
-$$[f * g](i,j,k) = \displaystyle\sum_{p,q,r}{f(p,q,r)g(i+p,j+q,k+r)}$$
+$[f * g](i,j,k) = \displaystyle\sum_{p,q,r}{f(p,q,r)g(i+p,j+q,k+r)}$
 
 
 
 **i,j,k가 바뀌어도 커널 $$f$$의 값은 바뀌지 않음.**
+
+
+
+
 
 (참고자료:https://zsunn.tistory.com/entry/AI-CNN%EA%B3%BC-RNN%EC%9D%98-%EC%9D%B4%ED%95%B4)
