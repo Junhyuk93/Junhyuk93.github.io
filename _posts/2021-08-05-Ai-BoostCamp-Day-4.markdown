@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "부스트캠프 AI Tech 2기 Day - 4"
+title:  "부스트캠프 AI Tech 2기 Day - 4 - CNN"
 date:   2021-08-04 23:15:36 +0530
 categories: TIL
 ---
@@ -21,7 +21,6 @@ categories: TIL
 
 
 > 1D-conv
-
 
 ![image](https://user-images.githubusercontent.com/61610411/128287725-55b6800f-1561-4e18-92a7-dc1520d1a37b.png)
 

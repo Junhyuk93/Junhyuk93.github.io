@@ -54,6 +54,8 @@ print(f(1,4))
 return 을 이용해서 랜덤한 수를 반환해주는 함수.
 
 임의의 수를 생성하고 이를 10회 반복하려 return 하도록 구성.
+
+
 ![image](https://user-images.githubusercontent.com/61610411/128296545-d43f09e3-4580-418b-8ce5-2784eaca34fa.png)
 
 
