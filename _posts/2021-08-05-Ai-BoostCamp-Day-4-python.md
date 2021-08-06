@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "부스트캠프 AI Tech 2기 Day - 4 - python"
-date:   2021-08-04 23:15:36 +0530
+date:   2021-08-05 19:15:36 +0530
 categories: TIL
 ---
 
