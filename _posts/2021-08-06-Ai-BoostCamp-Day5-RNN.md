@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "부스트캠프 AI Tech 2기 Day - 5 - RNN"
-date:   2021-08-05 19:15:36 +0530
+date:   2021-08-06 13:15:36 +0530
 categories: TIL
 ---
 
@@ -27,7 +27,7 @@ RNN
  각각의 데이터가 순서가 있는 데이터를 말하며, 시퀀스 원소들은 특정 순서를 가지므로 독립적이지 않다.
  대표적인 시퀀스 데이터로 시계열 데이터(시간의 흐름에 따라 기록된 데이터)와 텍스트 데이터(문맥이 존재), 주가 데이터 등 이 있다.
 
-
+---
 ### RNN 방식
 
 #### 1. 양방향 순환 신경망(Bi-directional RNN)
@@ -60,8 +60,11 @@ RNN
 
 https://ko.wikipedia.org/
 
+
 https://excelsior-cjh.tistory.com/154
 
+
 http://colah.github.io/posts/2015-09-NN-Types-FP/
+
 
 https://wegonnamakeit.tistory.com/7
