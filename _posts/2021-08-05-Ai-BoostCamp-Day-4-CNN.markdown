@@ -13,7 +13,7 @@ categories: TIL
 - **합성곱 신경망** (Convolutional neural network, CNN)은 시각적 영상을 분석하는 데 사용되는 다층의 피드-포워드적인 인공신경망의 한 종류이다. 공유 가중치 구조와 변환 불변성 특성에 기초하여 변이 불변 또는 공간 불변 인공 신경망(SIANN)으로도 알려져 있다. Convolution 연산은 커널(kernel)을 입력 벡터 상에서 움직여가면서 선형모델과 합성함수가 적용되는 구조이다. CNN 은 크게 **합성곱 계층(Convolution layer)**과 **풀링 계층(Poolding layer)**으로 구성된다.
 <center>
 ![image](https://user-images.githubusercontent.com/61610411/128285565-799639ed-6dd6-46e0-8633-8408aeb038dc.png)
-<center>
+
 
 
 - 합성곱 계층(Convolution layer)
