@@ -65,7 +65,7 @@ categories: TIL
 
 
 <p align="center">
-  <img src="/user-images.githubusercontent.com/61610411/128441981-c2063786-cf08-4815-ae8e-ccf98b9688d4.png" alt="text" width="number" />
+  <img src="https://user-images.githubusercontent.com/61610411/128441981-c2063786-cf08-4815-ae8e-ccf98b9688d4.png" alt="Backpropagation Algorithm" width="number" />
 </p>
 
 
