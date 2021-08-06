@@ -50,6 +50,11 @@ RNN
 ![image](https://user-images.githubusercontent.com/61610411/128453464-e0605a7c-98ee-4815-ac24-1c29e2b329d4.png)
 
 
+###### LSTM과 GRU의 차이점
+
+
+1. 출력게이트 수가 다르다.
+2. 망각게이트(forget gate)의 유무
 > 망각게이트(forget gate) : 과거 정보를 버릴지 말지 결정하는 과정. 즉, 망각게이트는 현재 입력과 이전 출력을 고려해서 cell state의 어떤 값을 버릴지 결정하는 역할.
 
 ![image](https://user-images.githubusercontent.com/61610411/128453619-77c1f37d-ea78-4124-8e70-594cb01a9dce.png)
