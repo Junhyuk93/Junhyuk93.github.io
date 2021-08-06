@@ -62,7 +62,7 @@ categories: TIL
 ---
 #### Convolution 연산의 역전파
 
-    오류 역전파 알고리즘(Backpropagation Algorithm)은 정방(Feedforward) 연산 이후, 에러예측값과 실제값의 오차를 후방(Backward)으로 다시 보내 줌으로써, 많은 노드를 가진 MLP라도 최적의 Weight와 Bias를 학습할 수 있도록 한다.
+- 오류 역전파 알고리즘(Backpropagation Algorithm)은 정방(Feedforward) 연산 이후, 에러예측값과    실제값의 오차를 후방(Backward)으로 다시 보내 줌으로써, 많은 노드를 가진 MLP라도 최적의 Weight와 Bias를 학습할 수 있도록 한다.
 
 
 
