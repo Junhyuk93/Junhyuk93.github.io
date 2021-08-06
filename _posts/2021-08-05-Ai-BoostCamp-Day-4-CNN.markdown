@@ -16,14 +16,14 @@ categories: TIL
 
 
 
-- 합성곱 계층(Convolution layer)
+- **합성곱 계층**(Convolution layer)
 
   이미지와 같은 3차원 데이터를 입력 받으면 다음 계층에도 3차원 데이터로 전달한다. CNN에서 합성곱 계층의 입출력 데이터는 다차원이기에 이것을 특징 맵(Feature Map)이라고 한다. 입력 데이터를 입력 특징 맵(Input Feature), 출력데이터를 출력 특징 맵(Output Feature Map) 이라고 한다.
 
 ![image](https://user-images.githubusercontent.com/61610411/128440431-00c54a17-6bad-45d6-97c9-d3642d3571d8.png)
 
 
-- 패딩(Padding)
+- **패딩**(Padding)
 
   합성곱 연산을 수행하기 전에 입력 데이터 주변은 특정 값(0,1 등)으로 채우기도 하는데, 이를 패딩이라 하며 합성곱 연산에서 자주 이용되는 기법이다. 폭 1짜리 패딩이면 데이터 사방 1픽셀을 특정 값으로 채우는 것을 말한다.
 
@@ -34,6 +34,8 @@ categories: TIL
   패딩을 적용하는 이유는 출력의 크기를 조절하기 위함이다. 패딩 없이 입력 데이터에 필터를 씌워 합성곱 연산을 수행하면 출력 데이터는 입력 데이터에 비해 무조건 작아지게 되어있다. 합성곱 연산을 반복하면 어느 시점에서는 출력 크기가 1이 되고, 더이상 합성곱 연산을 수행할 수 없게 된다. 이러한 사태를 방지하기 위해 패딩을 사용하는 것이다. 패딩을 사용하면 출력 데이터의 크기를 입력 데이터의 크기와 동일하게 설정할 수 있다.
 
 
+
+---
 #### 다양한 차원에서의 Convolution
 
 
@@ -57,16 +59,14 @@ categories: TIL
 
 **i,j,k가 바뀌어도 커널 $f$ 의 값은 바뀌지 않음.**
 
-
-- Convolution 연산의 역전파
+---
+#### Convolution 연산의 역전파
 
     오류 역전파 알고리즘(Backpropagation Algorithm)은 정방(Feedforward) 연산 이후, 에러예측값과 실제값의 오차를 후방(Backward)으로 다시 보내 줌으로써, 많은 노드를 가진 MLP라도 최적의 Weight와 Bias를 학습할 수 있도록 한다.
 
 
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61610411/128441981-c2063786-cf08-4815-ae8e-ccf98b9688d4.png" alt="Backpropagation Algorithm" width="number" />
-</p>
+![image](https://user-images.githubusercontent.com/61610411/128441981-c2063786-cf08-4815-ae8e-ccf98b9688d4.png)
 
 
 ---
@@ -78,6 +78,8 @@ categories: TIL
 
 - Convolution 연산은 커널이 모든 입력데이터에 공통으로 적용되기 때문에 역전파를 계산할 때도 convolution 연산이 나오게 된다.
 
+
+---
 (참고자료)
 
 https://zsunn.tistory.com/entry/AI-CNN%EA%B3%BC-RNN%EC%9D%98-%EC%9D%B4%ED%95%B4
