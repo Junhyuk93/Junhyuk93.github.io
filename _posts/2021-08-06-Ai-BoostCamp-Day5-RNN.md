@@ -50,7 +50,7 @@ RNN
 ![image](https://user-images.githubusercontent.com/61610411/128453464-e0605a7c-98ee-4815-ac24-1c29e2b329d4.png)
 
 
-###### LSTM과 GRU의 차이점
+#### LSTM과 GRU의 차이점
 
 
 1. 출력게이트 수가 다르다.
@@ -60,16 +60,17 @@ RNN
 ![image](https://user-images.githubusercontent.com/61610411/128453619-77c1f37d-ea78-4124-8e70-594cb01a9dce.png)
 
 ---
-
-<참고자료> 
-
-https://ko.wikipedia.org/
+ 
+참고자료
 
 
-https://excelsior-cjh.tistory.com/154
+<https://ko.wikipedia.org/>
 
 
-http://colah.github.io/posts/2015-09-NN-Types-FP/
+<https://excelsior-cjh.tistory.com/154>
 
 
-https://wegonnamakeit.tistory.com/7
+<http://colah.github.io/posts/2015-09-NN-Types-FP/>
+
+
+<https://wegonnamakeit.tistory.com/7>
