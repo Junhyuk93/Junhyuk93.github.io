@@ -64,21 +64,17 @@ categories: TIL
 
 
 
-<center>
-
-![image](https://user-images.githubusercontent.com/61610411/128441981-c2063786-cf08-4815-ae8e-ccf98b9688d4.png)
-
-
-<center>
+<p align="center">
+  <img src="/user-images.githubusercontent.com/61610411/128441981-c2063786-cf08-4815-ae8e-ccf98b9688d4.png" alt="text" width="number" />
+</p>
 
 
 ---
 
-<center>
 
 ![image](https://user-images.githubusercontent.com/61610411/128441559-e52c3725-5f65-44bd-b3ec-24459f375531.png)
 
-<center>
+
 
 - Convolution 연산은 커널이 모든 입력데이터에 공통으로 적용되기 때문에 역전파를 계산할 때도 convolution 연산이 나오게 된다.
 
