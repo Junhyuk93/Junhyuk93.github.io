@@ -16,20 +16,8 @@ categories: TIL
 - 학습데이터와 Input data가 달라져도 출력에 대한 성능 차이가 나지 않게 하는 것을 일반화라고 한다. 즉 Generalzation Error 을 줄이는게 목표.
 
 
-### 교차검증(Cross-Validation)
-
-
-![image](https://user-images.githubusercontent.com/61610411/128793098-8f4d2905-3d27-4951-9dcb-002e74a280c5.png)
-
-
-- 교차 검증의 종류
-    1. K-겹 교차 검증(K-fold cross validation)
-    2. Holdout 교차 검증
-    3. Leave-one-out 교차 검증
-    4. Leave-p-out 교차 검증
-
-
 ### Bias and Variance
+
 
 ![image](https://user-images.githubusercontent.com/61610411/128793288-2c0d9f27-5ca8-4a84-9039-8d272333deaf.png)
 
@@ -65,16 +53,16 @@ categories: TIL
   이 문제를 해결하기 위해 사용되는 방법이 Early Stopping 으로 **이전 epoch 때와 비교해서 오차가 증가했다면 학습을 중단한다** 는 방법이다.
 
 
-### Data augmentation
+### Data Augmentation
 
 
 ![image](https://user-images.githubusercontent.com/61610411/128795015-994ebe03-b0aa-4157-a415-4ac6e86bc3e0.png)
 
 
-데이터의 수가 부족해 과적합을 방지하고자 데이터를 부풀려내는 방법.
+데이터의 수가 부족해 데이터를 부풀려내는 방법.
 
 
-[DMQA data augmentation 세미나 발표 영상](http://dmqm.korea.ac.kr/activity/seminar/307)
+##### [DMQA data augmentation 세미나 발표 영상](http://dmqm.korea.ac.kr/activity/seminar/307)
 
 
 ### Noise robustness
@@ -99,4 +87,4 @@ categories: TIL
 
 
 
-참고자료 : (https://www.boostcourse.org/)
+참고자료 : (https://www.boostcourse.org/),(https://blog.naver.com/PostView.nhn?blogId=winddori2002&logNo=221850530979)
