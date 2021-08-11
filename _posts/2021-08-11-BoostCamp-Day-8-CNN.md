@@ -17,7 +17,7 @@ Convolution
 
 ![image](https://user-images.githubusercontent.com/61610411/129036794-321edafc-981f-4a84-b0e9-4fb1ba79822a.png)
 
-
+---
 ## Convolutional Layer (합성곱 층)
 
 
@@ -101,7 +101,7 @@ Convolution layer는 사람이 실제로 보는 것을 우측의 파란 3x3 픽�
 ![image](https://user-images.githubusercontent.com/61610411/129041726-6ca26fac-7ee5-4233-ab2e-f0a66b1c8016.png)
 
 
-
+---
 ## Stride (스트라이드)
 
 필터를 입력데이터나 특성에 적용할 때 움직이는 간격을 스트라이드(Stride) 라고 한다.
@@ -109,6 +109,7 @@ Convolution layer는 사람이 실제로 보는 것을 우측의 파란 3x3 픽�
 ![image](https://user-images.githubusercontent.com/61610411/129041844-d096d787-2602-490d-82d6-46572c0df62a.png)
 
 
+---
 ## Padding (패딩)
 
 패딩은 반복적으로 합성곱 연산을 적용했을 때 **특성의 행렬의 크기가 작아짐**을 방지하는 것과 이미지의 **모서리 부분의 정보손실을 줄이고자** 이미지 주변을 0으로 채워넣는 방법이다.
@@ -120,7 +121,7 @@ Convolution layer는 사람이 실제로 보는 것을 우측의 파란 3x3 픽�
 ![image](https://user-images.githubusercontent.com/61610411/129042385-b12d537a-4f20-467d-93a6-6857f77f477f.png)
 
 
-
+---
 ## 1d convolution
 
 1x1 Convolution 에는 크게 세가지 장점이 있다.
@@ -150,11 +151,33 @@ GoogLeNet을 포함하여 구글팀의 수많은 고민이 포함되어 적용�
 
 
 ---
-# Moden CNN
-
-
 ## AlexNet
 
+
+![image](https://user-images.githubusercontent.com/61610411/129047708-829809d8-111c-4b94-bd58-01eded4f52fe.png)
+
+AlexNet은 일부가 Max-pooling layer가 적용된 5개의 convolution layer와 3개의 fully-connected layer로 이루어져 있다.
+
+AlexNet의 구조에 적용된 특징
+
+1. ReLU Nonlinearity
+활성화 함수로 ReLU 를 적용시켰다.
+4층의 CNN으로 CIFAR-10을 학습시켰을 때 ReLU가 tanh보다 6배 빠르다고 한다.
+
+2. Traingng on Multiple GPUs
+network를 2개의 GPU로 나누어 학습시켰다. 120만개의 data를 학습시키기 위한 network은 하나의 GPU로 부족하다고 설명했다. 2개의 GPU로 나누어 학습시키니 top-1 error와  top-5 error가 1.7% 1.2%씩 감소되고 학습속도가 빨라졌다고 한다.
+
+3. Local Response Nrmalization(LRN)
+LRN은 generalization을 목적으로한다. 논문에서는 LRN을 측면 억제(later inhibition)의 형태로 구현한다고 나와있다. AlexNet 이후 현대의 CNN에서는 LRN 대신 batch normalization 기법이 쓰인다.
+
+4. Overlapping Pooling
+Overlapping pooling을 통해서 overfit을 방지하고 top-1와 top-5 error를 각각 0.4% 0.3% 낮추었다고 한다.
+
+5. data augmentation
+
+6. Dropout
+
+---
 
 ## VGGNet
 
