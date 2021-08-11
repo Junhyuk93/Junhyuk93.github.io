@@ -181,28 +181,87 @@ Overlapping pooling을 통해서 overfit을 방지하고 top-1와 top-5 error를
 
 ## VGGNet
 
+![image](https://user-images.githubusercontent.com/61610411/129116320-7f008607-6ffe-47c8-a15c-21508d392843.png)
+
+
+![image](https://user-images.githubusercontent.com/61610411/129116343-752cf0da-0360-44c0-9fa3-1aa4dfe3ddf7.png)
+
+
+ILSVRC 2012에서 우승한 AlexNet(8 layer) 과 비교하여 VGG(16-19 layer)는 2배가량 깊어졌다.
+VGGNet은 항상 이웃픽셀을 포함할 수 있는 가장 작은 3x3 필터만 사용한다.
+이렇게 작은 필터를 유지해 주고 주기적으로 Pooling을 수행하며 전체 네트워크를 구성한다.
+
+---
+
 ## GoogLeNet
 
+![image](https://user-images.githubusercontent.com/61610411/129116538-ddaa9702-f155-45c2-9e10-38e3d48ff018.png)
 
-### Inception Block
+이 모델의 주요 특징은 **연산을 하는데 소모하는 자원의 사용 효율이 개선**되었다는 것이다. 즉, 정교한 설계 덕에 네트워크의 depth와 width를 늘려도 연산량이 증가하지 않고 유지된다는 뜻이다. 이때 Google팀에서는 성능을 최적화하기 위해서 **Hebbian principle과 multi-scale processing을 적용**하였고, 이 구조를 GoogLeNet이라 부른다고 한다. GoogLeNet은 22개의 layer를 가지며, 코드네임은 **Inception**이다.
+
+GoogLeNet에 영향을 많이 끼친 논문중 Network in Network는 신경망의 표현력을 높이기 위해 제안된 접근법이다. 이 방법은 **1x1 Convolutional layer가 추가되며, ReLU activation이 뒤따른다**. 이 때 1x1 Convolutional layer는 두 가지 목적으로 사용된다.
+
+**병목현상을 제거하기 위한 차원 축소**와 **네트워크 크기 제한**이다.
+
 ![image](https://user-images.githubusercontent.com/61610411/128962567-98b408cf-432d-4832-a667-a823644c8694.png)
 
+![image](https://user-images.githubusercontent.com/61610411/129116990-7d61b56f-dc25-490f-a496-69b874a66b50.png)
+
+![image](https://user-images.githubusercontent.com/61610411/129116999-1a4ecc56-061d-4259-a0ed-f0e8041bf5fa.png)
+
+
+---
 
 ## ResNet
+
+딥러닝에서 neural networks가 깊어질수록 성능은 더 좋지만 train이 어렵다는 것은 알려진 사실이다. 그래서 이 논문에서는 residual(잔차)를 이용한 잔차학습(residual learning framework)를 이용해서 깊은 신경망에서도 training이 쉽게 이뤄질 수 있다는 것을 보이고 방법론으로 제시했다.
+
+
+![image](https://user-images.githubusercontent.com/61610411/129117256-d6f5eaa7-bbdb-4ea3-9aa3-8f62ed062d8d.png)
 
 
 ![image](https://user-images.githubusercontent.com/61610411/129029796-ad52b0ef-5394-4818-bc6d-7b4d21444496.png)
 
+![image](https://user-images.githubusercontent.com/61610411/129117304-047d53c4-bad8-4e3a-b9b3-343d7e94a290.png)
+
+
+---
+
 
 ## DenseNet
+
+DenseNet은 ResNet과 Pre-Activation ResNet보다 적은 파라미터 수로 더 높은 성능을 가진 모델이다. **DensNet은 모든 레이어의 피쳐맵을 연결한다. 이전 레이어의 피쳐맵을 그 이후의 모든 레이어의 피쳐맵에 연결한다** 연결할 때는 ResNet과 다르게 덧셈이 아니라 concatenate(연결)을 수행한다. 따라서 연결할 때는 피쳐맵 크기가 동일해야 한다. 피쳐맵을 계속해서 연결하면 채널 수가 많아질 수 있기 때문에, 각 레이어의 피쳐맵은 채널 수는 굉장히 작은 값을 사용합니다.
 
 ![image](https://user-images.githubusercontent.com/61610411/129029933-40687df5-631a-43b0-978a-262ac5d2611d.png)
 
 
-![image](https://user-images.githubusercontent.com/61610411/129029987-4f9759d1-aeb4-443d-8e7e-1bb411e7eef3.png)
+![image](https://user-images.githubusercontent.com/61610411/129117498-c4603050-c61d-4812-bfb6-10269006f492.png)
+
+
+이렇게 연결하면 어떤 장점이 있을까?
+
+
+- 1. **strong gradeint flow**와 **information flow**를 갖는다. 이는 기울기 소실 문제를 완하하고 feature reuse 효과가 있다.
+
+- 2. 파라미터수와 연산량이 적어진다.
 
 
 ![image](https://user-images.githubusercontent.com/61610411/129030039-072ea109-a45e-4f21-8111-7041fbc03b64.png)
 
 
-참고자료:(https://yjjo.tistory.com/8) (https://hwiyong.tistory.com/45)
+
+---
+
+참고자료
+
+(https://yjjo.tistory.com/8) 
+
+(https://hwiyong.tistory.com/45) 
+
+(https://phil-baek.tistory.com/entry/3-GoogLeNet-Going-deeper-with-convolutions-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0)
+
+(https://kangbk0120.github.io/articles/2018-01/inception-googlenet-review)
+
+(https://codebaragi23.github.io/machine%20learning/3.-ResNet-paper-review/)
+
+(https://deep-learning-study.tistory.com/528)
