@@ -71,14 +71,25 @@ categories: TIL
 ![image](https://user-images.githubusercontent.com/61610411/128795160-8cac6d69-63f8-4b64-9ceb-19d7b4c77073.png)
 
 
-### Label smoothing (Mixup, CutMix)
+### Label smoothing
+
+![image](https://user-images.githubusercontent.com/61610411/129120339-668e46fe-f1a9-44b3-b4d4-39d7c018f9b4.png)
 
 
-![image](https://user-images.githubusercontent.com/61610411/128795262-698461a0-668f-4250-be76-aec6aefbca5c.png)
 
+모델이 Ground Truth(GT)를 정확하게 예측하지 않아도 되게 만들어 주는 것이다.
+모델이 정확하지 않은 학습 데이터셋에 치중되는 경향을 막아 calibration 및 regularization 효과를 가질 수 있다.
 
+---
 ### Dropout
 
+![image](https://user-images.githubusercontent.com/61610411/129119890-268ea4fd-ae60-44f8-8e33-e9a9ee2b57b8.png)
+
+기본 신경망의 구조는 왼쪽처럼 각 레이어가 노드로 연결되어 있다. 하지만 위의 그림에서도 쉽게 볼 수 있듯이, 모델이 깊어짐에 따라 선들이 매우 많아지게 됨을 확인할 수 있다. 즉 너무 열심히 학습하게 된다는 것이다.
+
+이렇게 과적합이 되는걸 방지하기 위해 (Overfitting을 막기 위해) 인간처럼 기억을 잊을 수 있게 한 것이 Dropout 이다. 선택적으로 노드를 Drop 하는 것이다.
+
+---
 ### Batch normalization
 
 
