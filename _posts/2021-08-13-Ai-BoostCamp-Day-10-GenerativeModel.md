@@ -177,6 +177,7 @@ MCMC를 이해하기 위해서는 마코프 연쇄(Markov Chain)과 Monte Carlo 
 ---
 
 
+
 ## GAN PyTorch Implementation
 
 MNIST를 활용하여 GAN을 구현하는 방법은 [Woosung Choi's blog <GAN PyTorch 구현: 손글씨 생성>]<https://ws-choi.github.io/blog-kor/seminar/tutorial/mnist/pytorch/gan/GAN-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC/> 에서 확인
