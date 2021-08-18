@@ -11,10 +11,9 @@ categories: PyTorch
 
 ![image](https://user-images.githubusercontent.com/61610411/129822452-ebbb18ba-f945-47ad-b774-0aa693ec3a3a.png)
 
-딥러닝은 레고다~!
 
 
-
+---
 ## torch.nn.Module
 
 - 딥러닝을 구성하는 Layer의 Base class
@@ -25,6 +24,10 @@ categories: PyTorch
 
 
 ![image](https://user-images.githubusercontent.com/61610411/129822759-92034cab-d876-47c4-8283-93229d83a40e.png)
+
+
+---
+
 
 ## torch.nn.Parameter
 
@@ -52,6 +55,8 @@ class MyLiner(nn.Module):
         return x @ self.weights + self.bias
 ```
 
+
+---
 ## Backward
 
 - Layer에 있는 Parameter들의 미분을 수행
@@ -81,6 +86,8 @@ for epoch in range(epochs):
     optimizer.step()
 ```
 
+
+---
 ## Backward from the scratch
 
 - 실제 backward는 module 단계에서 직접 지정가능
@@ -95,11 +102,13 @@ for epoch in range(epochs):
 
 
 
+---
 ## 데이터를 모델에 입력하는 방법
 
 ![image](https://user-images.githubusercontent.com/61610411/129832680-d3587b9f-1795-442d-910d-bfe0f47b98f3.png)
 
 
+---
 ## Dataset 클래스
 
 -  데이터 입력 형태를 정의하는 클래스
@@ -131,6 +140,8 @@ class CustomDataset(Dataset):
 
 ```
 
+
+---
 ## Data set 클래스 생성시 유의점
 
 - 데이터 형태에 따라 각 함수를 다르게 정의함
@@ -144,6 +155,7 @@ class CustomDataset(Dataset):
 - 최근에는 HuggingFace 등 표준화된 라이브러리 사용
 
 
+---
 ## DataLoader 클래스
 
 - Data의 Batch를 생성해주는 클래스
