@@ -1,14 +1,12 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-<title>{{ page.title | default: site.title }}</title>
-{% seo %}
-{% if site.plainwhite.dark_mode %}
-<script type="text/javascript" src="{{ "/assets/js/darkmode.js" | relative_url }}"></script>
-{% endif %}
-
-{% if page.use_math %}
-  {% include mathjax_support.html %}
-{% endif %}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/libs/bootstrap/bootstrap.min.css">
+  <script defer src="{{ site.github.url }}/assets/libs/fontawesome/all.min.js"></script>
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/apple-icon-152x152.png">
+  <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
