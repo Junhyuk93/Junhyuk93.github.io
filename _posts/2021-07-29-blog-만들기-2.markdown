@@ -1,0 +1,194 @@
+---
+layout: post
+title:  "gitgub / 깃허브 블로그 만들기 - 2"
+date:   2021-07-29 22:34:36 +0530
+categories: Linux
+---
+
+##### 블로그 만들기 정리용 두번째
+
+
+테마를 적용하기 위해서는 jekyll 를 이용해야 합니다.  
+
+
+## 1. 로컬에 Jekyll 설치하기  
+
+
+gem 은 Ruby 라는 언어 위에서 작동하므로, Ruby 를 로컬 컴퓨터에 설치해야 합니다.  
+
+![5](https://user-images.githubusercontent.com/61610411/127499570-f2af72b7-c23d-41b4-8daa-99fe40d23bfa.PNG)
+
+
+[Ruby Installer for Windows](https://rubyinstaller.org/downloads/) 에 접속해서  
+
+
+WITH DEVKIT 에 가장 상위에 있는 파일을 다운로드 받았습니다.  
+
+![6](https://user-images.githubusercontent.com/61610411/127499630-b6b10c25-c8f6-412d-9637-2d8160ad2d06.PNG)  
+
+
+![7](https://user-images.githubusercontent.com/61610411/127499742-750dc23c-3b02-4620-af13-da5127800e73.PNG)  
+
+
+이후 터미널 창이 켜지고 
+
+
+![14](https://user-images.githubusercontent.com/61610411/127508915-0ccba2d2-1b0d-4a8e-8e99-9b507cd6917f.PNG)
+
+__1,3 중 누르라고 하는데 3 번 누르셔야 합니다~!__
+
+설치를 추가로 진행하시면 됩니다.  
+
+
+```
+gem install jekyll bundler
+```
+
+를 실행해줍니다.  
+
+
+## 2. 그 뒤 index.html 를 제거해줍니다.
+
+
+## 3. Jekyll 생성  
+
+
+전에 클론한 내 name.github.io 폴더 경로로 이동해서 아래의 명령어를 쳐주세요.  
+
+
+```
+jekyll new ./
+```
+
+
+## 4. bundle install  
+
+
+```  
+bundle install
+```
+
+위의 명령어를 입력해주세요.  
+
+## 5. Jekyll을 로컬서버에 띄우기  
+
+
+```
+bundle exec jekyll serve
+```
+
+하면 로컬 서버가 띄워집니다. 만약 __빨간색 오류메세지가 뜬다면__  
+
+```
+bundle add webrick
+```
+
+를 추가로 입력해주고 다시 띄워보세요. 버전이 바뀌면서 webrick 이 out 되었다고 하더라구요.  
+
+주소는  __http://127.0.0.1:4000/__  로 설정되어 있을겁니다.  
+
+브라우저 주소창에 쳐주면   
+
+
+![8](https://user-images.githubusercontent.com/61610411/127501271-ad0a9442-8940-4185-a11c-db9e5e1a5c8b.PNG)
+
+
+
+그림과 같은 웹사이트가 켜집니다. 주소창은 설정되어있는 __http://127.0.0.1:4000/__ 로 나올거에요.
+
+## 6. push  
+
+
+```
+git add .
+git commit -m "메세지"
+git push
+```
+
+를 이용하여 push 해줍니다.  
+
+
+이후 잠시 기다린뒤 새로고침을 하면  
+
+
+주소가 본인의 name.github.io 로 바뀝니다.  
+
+## 7. 테마 선택
+
+
+테마를 볼 수 있는 사이트
+
+- [jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
+
+- [jekyllthemes.org](http://jekyllthemes.org/)
+
+- [jekyllthemes.io](https://jekyllthemes.io/)
+
+- [jekyll-themes.com](https://jekyll-themes.com/)
+
+마음에 드는걸 찾아서 다운로드 받으시면 됩니다.
+
+
+여러 테마를 해봤는데 지금 시점부터 오래된 테마들은 뭔가 자꾸 충돌이 일어나더라구요.
+
+
+최신껄로 하는걸 추천드립니다.
+
+
+저는 http://jekyllthemes.org/themes/PlainWhite-Jekyll/ 이 테마로 했습니다.
+
+
+![9](https://user-images.githubusercontent.com/61610411/127505617-2398da73-947b-40e6-b3af-f4e1f19b876d.png)
+
+
+## 8. 테마 적용하기
+
+
+![10](https://user-images.githubusercontent.com/61610411/127506017-1520c93a-cdde-4ea3-a441-ffd9b353fc5e.PNG)
+
+
+그림과 같이 전체를 ZIP 형태로 다운로드 받아서 압축을 풉니다.
+
+이후 파일의 모든 내용물을 복사합니다.
+
+### 복사한 내용 전부를 내 github.io 폴더에 붙여넣습니다.
+
+![11](https://user-images.githubusercontent.com/61610411/127506628-8f020f92-d131-466a-92b3-71d8a3cb691e.PNG)
+
+
+파일은 모두 덮혀쓰기를 해줍니다.
+
+이상태로 push 를 하면 테마가 바뀐뒤 적용 됩니다.
+
+하지만 프로필을 설정하고 바꿔야하니 잠시 미루고
+
+## 9. 블로그 설정하기
+
+_congif.yml 열기
+
+### 닉네임.github.io 폴더에 있는 _congif.yml 파일을 열어줍니다.
+
+![12](https://user-images.githubusercontent.com/61610411/127507488-b6e328fa-fdd3-4529-ac30-ee9954582c90.PNG)
+
+
+
+열고 들어가면 자신에 설정에 맞게 블로그를 수정할 수 있습니다. 수정이 끝난뒤 저장을 해주시면 됩니다.
+
+이미지 같은 경우에는 
+
+name.github.io 폴더에서 __assets__ 폴더로 이동한 후 이미지를 넣어주고 
+![13](https://user-images.githubusercontent.com/61610411/127507781-b87f5fcd-1dc7-4693-ad14-d6dbb04084cb.png)
+
+
+경로를 수정해주시면 됩니다.
+
+이후 다시 
+
+```
+git add .
+git commit -m "메세지"
+git push
+```
+
+를 해주시면 잠시 후에 테마와 수정사항이 적용된 블로그가 완성됩니다.
+
