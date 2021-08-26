@@ -28,12 +28,12 @@ exclude:
   - not-pure-poole.gemspec
 
 # Optimize Jekyl SEO Tag
-twitter:
-  username: vszhub
-  card: summary
+# twitter:
+#   username: vszhub
+#   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: Park JH
   links:
     # - https://twitter.com/vszhub
     - https://github.com/Junhyuk93

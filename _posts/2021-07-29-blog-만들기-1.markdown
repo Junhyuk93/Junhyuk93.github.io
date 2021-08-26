@@ -3,6 +3,7 @@ layout: post
 title:  "gitgub / 깃허브 블로그 만들기 - 1"
 date:   2021-07-29 18:34:36 +0530
 categories: Linux
+thma
 ---
 
 ##### 블로그 만들기 정리용 첫번째
