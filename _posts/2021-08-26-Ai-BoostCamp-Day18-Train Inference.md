@@ -15,6 +15,8 @@ tag: [Pytorch, Model, LossFunction]
 
 ---
 
+
+
 * 학습 프로세스에 필요한 요소는 크게 세가지(Loss, Optimizer, Metric)으로 나누어진다.
 
 
