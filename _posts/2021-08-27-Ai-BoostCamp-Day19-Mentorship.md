@@ -17,7 +17,11 @@ Mentorship
 
 ![image](https://user-images.githubusercontent.com/61610411/131075597-e305d5ee-5ea9-4cfb-a79c-481b7e527e02.png)
 
+---
+
 ### 대학원은 **연구**하는 곳!
+
+---
 
 ![image](https://user-images.githubusercontent.com/61610411/131075773-193dd695-0e2b-4999-9af4-2970c4fb6198.png)
 
@@ -27,7 +31,11 @@ Mentorship
 
 ![image](https://user-images.githubusercontent.com/61610411/131076691-6e16a934-5611-47dc-b3af-a355868946f8.png)
 
+---
+
 ## **인공지능대학원협의회** (https://aigs.kr/default/)
+
+---
 
 ![image](https://user-images.githubusercontent.com/61610411/131077056-a2872333-91cc-4626-a359-98878e3e5936.png)
 
@@ -37,13 +45,21 @@ Mentorship
 
 ![image](https://user-images.githubusercontent.com/61610411/131077661-756fc6f2-9c92-4ad9-b276-d1ad7220d1f3.png)
 
+---
+
 #### 데싸 대학원 관심있으면 아래 확인하기!
+
+---
 
 ![image](https://user-images.githubusercontent.com/61610411/131077741-dc97d4f7-b58c-4cd2-9e45-2e3c0a6d2b06.png)
 
 ![image](https://user-images.githubusercontent.com/61610411/131077823-c04ff781-d700-4911-8c3b-944ff64328dc.png)
 
+---
+
 ### 기록을 꼭 중요시하게 남길 것! 내용도 중요하지만 꾸준하게 남기는게 더 중요하다!!
+
+---
 
 ![image](https://user-images.githubusercontent.com/61610411/131078294-08f5c983-e506-4d9b-be6c-80927d3d3599.png)
 
