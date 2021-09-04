@@ -9,7 +9,7 @@ categories: DL TIL
 
 ![image](https://user-images.githubusercontent.com/61610411/129582681-c4830718-6f64-47ca-980d-81fd8d997a31.png)
 
-## VGGNet 구현해보기
+## VGGNet 설명
 
 
 VGGNet -> 망의 깊이가 어떠한 영향을 주는지 밝히기 위한 실험이 시초
@@ -17,10 +17,26 @@ VGGNet -> 망의 깊이가 어떠한 영향을 주는지 밝히기 위한 실험
 ![image](https://user-images.githubusercontent.com/61610411/129577251-9d68d59e-6c4b-4ac5-8bf0-7f2535241a31.png)
 
 
-작은 필터로 네트워크층을 깊게 쌓은 모델
+![image](https://user-images.githubusercontent.com/61610411/132096623-c6d8cf16-059f-4771-a2b9-45d2cb367c56.png)
+
+
+#### 작은 필터로 네트워크층을 깊게 쌓은 모델
+
+#### 같은 layer 들을 묶어서 block 으로 처리함.
 
 
 
+---
+
+## 3x3 Conv를 사용하는 이유
+
+![image](https://user-images.githubusercontent.com/61610411/132096706-d88559ff-5955-43e4-8fa0-48dc715a22fa.png)
+
+정보를 압축하고, 연산량을 줄일 수 있다.
+
+---
+
+## VGGNet 구현해보기
 
 ```python
 import torch
