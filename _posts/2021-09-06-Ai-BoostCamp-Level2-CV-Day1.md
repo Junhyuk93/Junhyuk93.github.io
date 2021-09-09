@@ -120,7 +120,7 @@ shear_img = cv2.warpAffine(image, M, (cols,rows))
 
 ![image](https://user-images.githubusercontent.com/61610411/132170503-5f3c172b-6eb4-48d8-a90b-431cd89ae37e.png)
 
-- 어떠한 augmentation 을 사용할 지? 강도(magnitude)는 얼마나 적용시킬 것 인지? 를 parameter로 받는다.
+#### 어떠한 augmentation 을 사용할 지? 강도(magnitude)는 얼마나 적용시킬 것 인지? 를 parameter로 받는다.
 
 
 ---
@@ -147,31 +147,82 @@ shear_img = cv2.warpAffine(image, M, (cols,rows))
 
 ### 2.2 Knowledge distillation
 
-- 이미 학습된 Teacher Network 지식을 더 작은 모델인 Student Network 에 주입을 시켜 학습한다. (big model -> small model로 지식 전달)
+#### 이미 학습된 Teacher Network 지식을 더 작은 모델인 Student Network 에 주입을 시켜 학습한다. (big model -> small model로 지식 전달)
 
-- 최근엔 Teacher 에서 생성된 output 을 Unlableled 된 데이터에 가짜 label으로 자동 생성하는 매커니즘으로 사용한다. 그렇게해서 가짜 label로 더 큰 student network 를 사용할 때도, regularization 역할로 사용할 수 있다. ( 더 많은 데이터를 사용할 수 있기 때문에)
+#### 최근엔 Teacher 에서 생성된 output 을 Unlableled 된 데이터에 가짜 label으로 자동 생성하는 매커니즘으로 사용한다. 그렇게해서 가짜 label로 더 큰 student network 를 사용할 때도, regularization 역할로 사용할 수 있다. ( 더 많은 데이터를 사용할 수 있기 때문에)
 
 ![image](https://user-images.githubusercontent.com/61610411/132176650-099ca628-5f2e-42de-af50-b70b0793c721.png)
 
-soft / hard voting
+
+- Distillation loss 는 teacher model과 유사한 예측 output을 뽑아내기 위한 loss이다.
+
+![image](https://user-images.githubusercontent.com/61610411/132283231-925a21f9-3cb9-41c2-9580-0f2ef177e409.png)
+
+
+- Hard label (One-hot vector)
+    - Typically obtained from the dataset
+    - indicates whether a class is 'true answer' or not
+
+- soft label
+    - Typicall output of the model (=inference result)
+    - Regard it as 'knowledge'. Useful to observe how the model thinks
+
 
 ![image](https://user-images.githubusercontent.com/61610411/132238357-b169bca0-b314-4f35-85ac-3e2fb55a0730.png)
 
-softmax with temperature
+- softmax with temperature(T)
+    - Softmax with temperature: controls difference in output between small & larget input values
+    - A large T smoothens large input value difference
+    - Usefull to synchronize the student and teacher models' outputs
+
 
 ![image](https://user-images.githubusercontent.com/61610411/132238456-195c43f5-4abb-42f8-a864-4bcb01553793.png)
 
-Distillation Loss
+- Distillation Loss
 
-- KLdiv(Soft label, Soft prediction)
-- Loss = difference between the teacher and student network's inference
-- Learn what teacher network knows by mimicking
+    - KLdiv(Soft label, Soft prediction)
+    - Loss = difference between the teacher and student network's inference
+    - Learn what teacher network knows by mimicking
 
-Student Loss
+- Student Loss
 
-- CrossEntropy(Hard label, Soft prediction)
-- Loss = difference between the student network's inference and true label
-- Learn the "right answer"
+    - CrossEntropy(Hard label, Soft prediction)
+    - Loss = difference between the student network's inference and true label
+    - Learn the "right answer"
 
 
 ## 3. Leveraging unlabeled dataset for training
+
+---
+
+### 3.1 Semi-supervised learning
+
+unlabeled data 가 많을 경우.
+
+#### Semi-supervised learning : Unsupervised(No label) + Fully Supervised(fully labeled)
+
+![image](https://user-images.githubusercontent.com/61610411/132284177-fb8b19b8-592a-4392-b28d-e4bd1a117c6c.png)
+
+#### labeled dataset 을 Model에 넣어 Unlabeled dataset 을 Pseudo-labeling 을 실시해 Pseudo-labeled datset으로 만든 뒤 학습에 이용한다.
+
+![image](https://user-images.githubusercontent.com/61610411/132284310-d3e798ea-d01d-46f1-adf9-ec7cc73cdab6.png)
+
+
+
+### 3.2 Self-training 
+
+Recap : Data efficient learning methods so far
+
+#### self-training -> Augmentation + Teacher-Student networks + semi-supervised learning
+
+![image](https://user-images.githubusercontent.com/61610411/132284488-f1e62dfd-f3a5-457c-86af-a5e59f5189c6.png)
+
+#### self-training with noisy student
+
+
+
+![image](https://user-images.githubusercontent.com/61610411/132284578-3ef7207d-58f5-44b6-aa08-94c709293e05.png)
+
+![image](https://user-images.githubusercontent.com/61610411/132284713-085ec720-f13e-4c2c-a150-40fc62663c71.png)
+
+ 
