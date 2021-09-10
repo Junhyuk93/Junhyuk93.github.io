@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "부스트캠프 AI Tech 2기 CV - 2 "
-date:   2021-09-03 16:30:10 +0530
-categories: Segmentation
-tag: [Semantic segmentaiton,segmentation]
+title:  "부스트캠프 AI Tech 2기 Level2 CV Day 2 "
+date:   2021-09-06 21:30:10 +0530
+categories: Computer Vision
+tag: [CV, segmentation]
 ---
 
 
