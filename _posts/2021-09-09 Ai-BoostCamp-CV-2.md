@@ -83,6 +83,8 @@ AlexNet에선 Flattening 을 통해 긴 vector 형태로 만들어 주어서 Ful
 
 transpose convolution를 사용할 때에는 매우 주의해야 할 부분이 convolution kernel size 와 stride 를 잘 조절해서 중첩이 생기지 않도록 신경써서 튜닝을 해줘야 한다. (반복되는 blocky 한 checkboard 구조가 생기지 않도록)
 
+(https://runebook.dev/ko/docs/pytorch/generated/torch.nn.upsample)
+
 ### Better approaches for upsampling
 
 ![image](https://user-images.githubusercontent.com/61610411/132785793-61eaea88-99a8-48c9-a215-03c4a4ab4364.png)
