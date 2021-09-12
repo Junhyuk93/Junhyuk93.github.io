@@ -208,6 +208,8 @@ Focal loss는 분류 에러에 근거한 loss에 가중치를 부여하는데,  
 
 ![image](https://user-images.githubusercontent.com/61610411/132948739-49d55e2e-ea0b-49c9-8f10-c9495b4c4285.png)
 
+Low level 특징과 high level 특징을 둘다 잘 활용하면서도 각 scale 별로 물체를 잘 찾기 위한 Multi-scale 구조를 갖기 위해 이렇게 생겼음.
+
 ## 5. Detection with Transformer
 
 
@@ -216,6 +218,11 @@ Focal loss는 분류 에러에 근거한 loss에 가중치를 부여하는데,  
 
 ![image](https://user-images.githubusercontent.com/61610411/132950272-2dc93246-a750-4019-8d50-1bb5d9385f63.png)
 
+
 ![image](https://user-images.githubusercontent.com/61610411/132950287-674584d9-a959-43d4-abd2-d523b86ca754.png)
 
+DETR 은 Transformer 를 object detection 에 적용한 사례이다. 기본적인 CNN 의 feature 와 각 위치의 multi-dimension 으로 표현한 encoding을 쌍으로 해서 input token 을 만들어준다. 이렇게 encoding 이 된 후 transformer encoder 를 거치게 되고, 정리된 특징들을 decoder 에 넣어준다. 이후 object queries 를 활용하여 token 이 나타내는 object 가 무엇인지에 대한 질의를 한다. 이후 token 의 위치 정보를 파싱해서 결과값이 출력된다.
+
+
 ![image](https://user-images.githubusercontent.com/61610411/132950345-6ea0c91e-479a-478d-a11b-a4b944ee354c.png)
+
