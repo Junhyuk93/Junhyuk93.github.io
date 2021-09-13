@@ -140,14 +140,22 @@ IOU = (두 영역의 교집합 / 두 영역의 합집합)
 
 ![image](https://user-images.githubusercontent.com/61610411/132947299-206ce91f-a427-41c7-a51d-f326183e77dd.png)
 
-##### RPN 의 구조
+#### RPN 의 구조
+
     - feature map 관점에서 fully convolution 하게 sliding window 방식으로 이동하며 매 위치마다 k 개의 anchor box를 고려한다.
     
     각 위치에서 256 dimension 의 feature map 을 추출하고 여기서 2k 개의 classification score 를 출력한다. 
     
     그리고 4k 개의 정교한 bounding box를 만들기 위한 regression output 을 출력한다.
 
-##### NMS (Non Maximum Suppression)
+### NMS (Non Maximum Suppression)
+
+- 1. 동일한 클래스에 대해 높은-낮은 confidence 순서로 정렬한다. 
+
+- 2. 가장 confidence가 높은 boundingbox와 IOU가 일정 이상인 boundingbox는 동일한 물체를 detect했다고 판단하여 지운다.
+
+![image](https://user-images.githubusercontent.com/61610411/133033841-ac80b73b-c776-4b83-940b-843cfbfcf707.png)
+
 
 ![image](https://user-images.githubusercontent.com/61610411/132947440-c139d679-1d92-43e0-9a27-31fd11cc7ced.png)
 
@@ -231,6 +239,8 @@ Low level 특징과 high level 특징을 둘다 잘 활용하면서도 각 scale
 
 DETR 은 Transformer 를 object detection 에 적용한 사례이다. 기본적인 CNN 의 feature 와 각 위치의 multi-dimension 으로 표현한 encoding을 쌍으로 해서 input token 을 만들어준다. 이렇게 encoding 이 된 후 transformer encoder 를 거치게 되고, 정리된 특징들을 decoder 에 넣어준다. 이후 object queries 를 활용하여 token 이 나타내는 object 가 무엇인지에 대한 질의를 한다. 이후 token 의 위치 정보를 파싱해서 결과값이 출력된다.
 
+
+[DETR 설명 나동빈님 유튜브](https://www.youtube.com/watch?v=hCWUTvVrG7E "DETR 설명 나동빈님 유튜브")
 
 ![image](https://user-images.githubusercontent.com/61610411/132950345-6ea0c91e-479a-478d-a11b-a4b944ee354c.png)
 
