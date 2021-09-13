@@ -107,9 +107,13 @@ Selective search를 활용해 물체가 있을 법한 장소를 2000개 탐색�
 
     1. input image와 multiple regions of interest(ROI = 이미지상 내가 관심있어하는 일부 영역)가 입력으로 사용된다.
 
-    2. 각각의 ROI는 ConvNet 연산을 통해 고정된 크기의 ROI에 해당하는 feature map 으로 pooling되고, FC layers 를 통해 feture vector로 맵핑된다.
+    2. 각각의 ROI는 ConvNet 연산을 통해 고정된 크기의 ROI에 해당하는 feature map 으로 pooling되고,
+    
+    FC layers 를 통해 feture vector로 맵핑된다.
 
-    3. ROI 별 두개의 output을 가지고, 더 정밀한 bounding box 를 추정하기 위해 bounding box regressor과 softmax 를 통한 classification 을 수행한다. 
+    3. ROI 별 두개의 output을 가지고, 더 정밀한 bounding box 를 추정하기 위해
+    
+    bounding box regressor과 softmax 를 통한 classification 을 수행한다. 
 
 
 [Fast R-CNN](https://arxiv.org/abs/1504.08083 "Fast R-CNN 논문")
@@ -137,7 +141,11 @@ IOU = (두 영역의 교집합 / 두 영역의 합집합)
 ![image](https://user-images.githubusercontent.com/61610411/132947299-206ce91f-a427-41c7-a51d-f326183e77dd.png)
 
 ##### RPN 의 구조
-    - feature map 관점에서 fully convolution 하게 sliding window 방식으로 이동하며 매 위치마다 k 개의 anchor box를 고려한다. 각 위치에서 256 dimension 의 feature map 을 추출하고 여기서 2k 개의 classification score 를 출력한다. 그리고 4k 개의 정교한 bounding box를 만들기 위한 regression output 을 출력한다.
+    - feature map 관점에서 fully convolution 하게 sliding window 방식으로 이동하며 매 위치마다 k 개의 anchor box를 고려한다.
+    
+    각 위치에서 256 dimension 의 feature map 을 추출하고 여기서 2k 개의 classification score 를 출력한다. 
+    
+    그리고 4k 개의 정교한 bounding box를 만들기 위한 regression output 을 출력한다.
 
 ##### NMS (Non Maximum Suppression)
 
