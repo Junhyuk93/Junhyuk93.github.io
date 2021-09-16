@@ -130,9 +130,11 @@ high quality output 을 얻기 위한 Loss
 
 ![image](https://user-images.githubusercontent.com/61610411/133358377-4f5dfa1f-9c89-4c90-9ad9-0de1719144d2.png)
 
+pretrained 된 visual perception들이 인간의 visual perception과 유사한 측면이 발견됨. ( 사람의 눈과 비슷한 역할 )
+
 ![image](https://user-images.githubusercontent.com/61610411/133358764-d429e800-f2d5-49cb-a871-508d49a2703f.png)
 
-Loss 하나만을 추가함으로서 쉽게 style transfer를 할 수 있는 generator를 학습시킬 수 있다.
+Perceptual loss 를 사용하면 GAN을 사용하지 않고도 Loss 하나만을 추가함으로서 쉽게 style transfer를 할 수 있는 generator를 학습시킬 수 있다.
 
 ![image](https://user-images.githubusercontent.com/61610411/133358802-0f37cbb0-aeea-429f-98ef-7ce0b329ec63.png)
 
@@ -141,6 +143,7 @@ Image Transform Net : input image가 주어지면 하나의 style로 transformed
 Loss network(Fix된 VGG16) : image classification network -> feature 추출
 
 ![image](https://user-images.githubusercontent.com/61610411/133359098-deb688e5-7d4c-4055-9a05-f2b453362076.png)
+
 
 ### Feature Reconstruction Loss
 
@@ -154,10 +157,10 @@ Content Target 은 원본 x 를 입력으로 넣어주고, 이후 VGG 를 통과
 
 이 두개를 분해할땐 L2 Loss 를 통해 backpropagation 을 이용하여 y를 업데이트 할 수 있게끔 해준다.
 
-
-![image](https://user-images.githubusercontent.com/61610411/133561662-ce23b7b0-2ab3-4f09-b1ea-8a66838b3c5e.png)
+![image](https://user-images.githubusercontent.com/61610411/133566291-19ad2351-57a9-4553-bdb7-17db8cb8a3b0.png)
 
 Feature reconstruction loss는 Pre-trained 모델 Hidden Layers에서 출력이미지와 원본이미지의 두 Feature space 을 추출하여 연산하며, 두 Feature space 간의 Euclidean distance를 나타낸다. 해당 Loss의 특징은 아래 그림과 같이 이미지 전반적인 구조(Overall spatial structure)를 유지하며, 그 외 색상이나 질감에 대한 특징은 보존하지 않는다.
+
 
 ### Style reconstruction loss
 
