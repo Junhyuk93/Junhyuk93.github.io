@@ -142,6 +142,8 @@ Loss network(Fix된 VGG16) : image classification network -> feature 추출
 
 ![image](https://user-images.githubusercontent.com/61610411/133359098-deb688e5-7d4c-4055-9a05-f2b453362076.png)
 
+### Feature Reconstruction Loss
+
 input x 에서부터 y^ 생성한다.
 
 y^이 의도한 바로 transform이 되기 위해 VGG 를 사용해 feature 를 추출하고 backpropagation 을 해서 중간 transform을 하려는 f를 학습한다.
@@ -152,6 +154,11 @@ Content Target 은 원본 x 를 입력으로 넣어주고, 이후 VGG 를 통과
 
 이 두개를 분해할땐 L2 Loss 를 통해 backpropagation 을 이용하여 y를 업데이트 할 수 있게끔 해준다.
 
+
+![image](https://user-images.githubusercontent.com/61610411/133561662-ce23b7b0-2ab3-4f09-b1ea-8a66838b3c5e.png)
+
+Feature reconstruction loss는 Pre-trained 모델 Hidden Layers에서 출력이미지와 원본이미지의 두 Feature space 을 추출하여 연산하며, 두 Feature space 간의 Euclidean distance를 나타낸다. 해당 Loss의 특징은 아래 그림과 같이 이미지 전반적인 구조(Overall spatial structure)를 유지하며, 그 외 색상이나 질감에 대한 특징은 보존하지 않는다.
+
 ### Style reconstruction loss
 
 ![image](https://user-images.githubusercontent.com/61610411/133472780-d5c891a6-265b-41dd-916b-eebd439d0c37.png)
@@ -160,10 +167,17 @@ Content Target 은 원본 x 를 입력으로 넣어주고, 이후 VGG 를 통과
 
 style target 과 transformed image 를 VGG에 입력으로 넣어줘서 feature를 추출한다.
 
+![image](https://user-images.githubusercontent.com/61610411/133565670-efb9b922-6bda-4b56-b0b5-f3f3d1b37491.png)
+
+Style reconstruction loss는 바로 위에 설명했던 Feature reconstruction loss와 정반대로, 이미지의 전반적인 구조보다는 원본이미지의 색상이나 질감을 출력이미지가 표현할 수 있도록 만드는데 기여하는 Loss 이다.
+
 **Gram Matrices** 
 
 이미지 전반에 걸친 통계적 특성을 담기 위함.
 
+gram matrix란 flatten feature maps 간 계산한 covariance matrix이다.
+
+이미지 데이터의 style은 CNN 모델의 feature map과 feature map의 correlation(gram matrix)으로 사전 정의한다. 결국 기존 그림의 gram matrix와 새로운 그림의 gram matrix의 loss 차를 최소화 시켜 새로운 그림에 기존 그림의 style을 입히겠다는 의미를 갖는 것이다.
 
 # 3. Various GAN applications
 
