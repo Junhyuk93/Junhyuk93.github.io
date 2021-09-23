@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "부스트캠프 AI Tech 2기 Level2 CV Day 1 "
+title:  "부스트캠프 AI Tech 2기 Level2 CV Data augmentation "
 date:   2021-09-06 21:30:10 +0530
 categories: Computer Vision
 tag: [CV, augmentation]
