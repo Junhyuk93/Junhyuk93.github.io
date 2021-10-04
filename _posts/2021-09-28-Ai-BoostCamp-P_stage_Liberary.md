@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "부스트캠프 AI Tech 2기 Level2 P_stage Object Detection "
+title:  "부스트캠프 AI Tech 2기 Level2 P_stage Object Detection Library "
 date:   2021-09-28 15:30:10 +0530
 categories: Object Detection Library
 tag: [CV, Object Detection, Detection, Library, mmdetection, detectron2]
