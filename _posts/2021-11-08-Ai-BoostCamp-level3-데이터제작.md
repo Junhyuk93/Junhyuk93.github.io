@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "부스트캠프 AI Tech 2기 Level3 데이터 제작의 중요성"
-date:   2021-10-25 15:30:10 +0530
+date:   2021-11-08 15:30:10 +0530
 categories: Data
 tag: [Data, Software, AI]
 ---
