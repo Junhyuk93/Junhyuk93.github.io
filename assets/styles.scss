@@ -30,9 +30,9 @@
 @import "message";
 @import "toc";
 @import "alignment";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 @import "syntax-light";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 @media (prefers-color-scheme: dark) {
   @import "syntax-dark";
 }
