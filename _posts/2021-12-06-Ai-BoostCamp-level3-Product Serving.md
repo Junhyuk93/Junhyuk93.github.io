@@ -18,15 +18,15 @@ product serving
 
 ## 1. MLOps 개론
 
- ### 모델 개발 프로세스 - Research
- 
- - 문제정의 - EDA - Feature Engineering - Train - Predict
- 
- ### 모델 개발 프로세스 - Production
- 
- - 문제정의 - EDA - Feature Engineering - Train - Predict - **Deploy**
-  
- ![](https://i.imgur.com/kJmFmQg.png)
+### 모델 개발 프로세스 - Research
+
+- 문제정의 - EDA - Feature Engineering - Train - Predict
+
+### 모델 개발 프로세스 - Production
+
+- 문제정의 - EDA - Feature Engineering - Train - Predict - **Deploy**
+
+![](https://i.imgur.com/kJmFmQg.png)
 
 **✨MLOps의 목표는 빠른 시간 내에 가장 적은 위험을 부담하며 아이디어 단계부터 Production 단계까지 ML 프로젝트를 진행할 수 있도록 기술적 마찰을 줄이는 것✨**
 

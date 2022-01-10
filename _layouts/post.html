@@ -1,53 +1,38 @@
 ---
 layout: default
 ---
-
 <article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-meta">
-    {%- assign date_format = site.date_format | default: "%-d %b %Y" -%}
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
-    {%- if page.last_modified_at -%}
-      <span> ~ </span>
-      {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-      <time datetime="{{ mdate }}" itemprop="dateModified">
-        {{ mdate | date: date_format }}
-      </time>
-    {%- endif -%}
-    {%- if page.author -%}
-      <span> • </span>
-      {% for author in page.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          {{ author }}
-        </span>
-        {%- if forloop.last == false %}, {% endif -%}
-      {% endfor %}
-    {%- endif -%}
-  </div>
+  {%- if page.image -%}
+    <div class="featuredImage">
+        <img src="{{ '/assets/img/' | append: page.image }}" alt="" />
+      </div>
+  {%- endif -%}
+  <header>
+    <h1 class="postTitle">{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
+  </header>
 
   {{ content }}
 
-  {% if page.tags %}
-    {% include post-tags.html %}
-  {% endif %}
-
-  {% if jekyll.environment == "production" and site.disqus and page.comments != false %}
-    {% include disqus.html %}
-  {% endif %}
+  <!-- POST NAVIGATION -->
+  <footer class="postNav clearfix">
+    {%- if page.previous.url -%} 
+      <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
+      {%- if page.previous.image -%} 
+        <img src="{{ '/assets/img/' |  append: page.previous.image }}" alt="">
+      {%- endif -%}
+    </a>
+    {%- endif -%}  
+    {%- if page.next.url -%}  
+      <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
+      {%- if page.next.image -%} 
+        <img src="{{ '/assets/img/' | append: page.next.image }}" alt="">
+      {%- endif -%} 
+      </a>
+    {%- endif -%} 
+  </footer>
 </article>
 
-{% if site.related_posts != empty %}
-<aside class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
-{% endif %}
+{%- if site.disqus.shortname -%}
+  {%- include disqus_comments.html -%}
+{%- endif -%}
