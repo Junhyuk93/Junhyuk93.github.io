@@ -1,9 +1,28 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
+=======
+# Setup
+title: Junhyuk Park
+description: AI Engineer / Data nalyst
+url: https://Junhyuk93.github.io
+avatar: /KakaoTalk_20220103_123627283.jpg
+paginate: 10
+permalink: pretty
+cover_image: /캡처.jpg
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+>>>>>>> 8edf76567ef49668918e7eb84ee1ec11d812da65
 
 # Theme Settings
 #
@@ -14,6 +33,7 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dir\t", "neon", "mint", "plum", "sunrise"
 
+<<<<<<< HEAD
 # Site Settings
 locale                   : "ko"
 title                    : "Happy Jihye"
@@ -192,6 +212,20 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+=======
+# Optimize Jekyl SEO Tag
+# twitter:
+#   username: vszhub
+#   card: summary
+logo: logo.png
+social:
+  name: Junhyuk Park
+  links:
+    - https://twitter.com/vszhub
+    - https://github.com/junhyuk93
+google_site_verification: xxxxx
+lang: en / kr
+>>>>>>> 8edf76567ef49668918e7eb84ee1ec11d812da65
 
 
 # Sass/SCSS
@@ -207,6 +241,7 @@ paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+<<<<<<< HEAD
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -296,3 +331,10 @@ defaults:
       comments: false
       share: true
       related: false
+=======
+# Specify the author for blog posts
+author:
+  name: Junhyuk Park
+  url: https://github.com/junhyuk93/
+  email: akznsk1@gmail.com
+>>>>>>> 8edf76567ef49668918e7eb84ee1ec11d812da65
