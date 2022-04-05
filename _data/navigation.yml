@@ -1,4 +1,10 @@
-- title: Blog
-  url: /
-- title: About
-  url: /about/
+# main links
+main:
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "NLP"
+    url: /nlp/
+  - title: "Visions"
+    url: /vision/
